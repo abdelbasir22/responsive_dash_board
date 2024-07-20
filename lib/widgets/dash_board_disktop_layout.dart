@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dash_board/widgets/custom_drawer.dart';
 
 class DashBoardDisktopLayout extends StatelessWidget {
   const DashBoardDisktopLayout({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const Row(
+      children: [
+        Expanded(
+          child: CustomDrawer(),
+        ),
+      ],
+    );
   }
 }
