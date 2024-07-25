@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/widgets/all_expenses.dart';
+import 'package:responsive_dash_board/widgets/all_expenses_quick_inoice_section.dart';
 import 'package:responsive_dash_board/widgets/custom_drawer.dart';
-import 'package:responsive_dash_board/widgets/quick_invoice.dart';
+import 'package:responsive_dash_board/widgets/my_card.dart';
 
 class DashBoardDisktopLayout extends StatelessWidget {
   const DashBoardDisktopLayout({super.key});
@@ -18,16 +18,14 @@ class DashBoardDisktopLayout extends StatelessWidget {
         ),
         Expanded(
           flex: 2,
-          child: Column(
-            children: [
-              AllExpenses(),
-              SizedBox(
-                height: 24,
-              ),
-              QuickInvoice(),
-            ],
-          ),
-        )
+          child: SingleChildScrollView(child: AllExpensesQuickInoiceSection()),
+        ),
+        SizedBox(
+          width: 24,
+        ),
+        Expanded(
+          child: MyCard(),
+        ),
       ],
     );
   }
