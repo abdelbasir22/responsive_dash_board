@@ -16,7 +16,9 @@ class AllExpensesHeader extends StatelessWidget {
         Expanded(
           child: SizedBox(),
         ),
-        RangeOptions(),
+        RangeOptions(
+          title: 'Monday',
+        ),
       ],
     );
   }

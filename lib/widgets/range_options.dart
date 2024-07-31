@@ -5,7 +5,9 @@ import '../utils/app_style.dart';
 class RangeOptions extends StatelessWidget {
   const RangeOptions({
     super.key,
+    required this.title,
   });
+  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -23,8 +25,8 @@ class RangeOptions extends StatelessWidget {
       ),
       child: Row(
         children: [
-          const Text(
-            'Monday',
+          Text(
+            title,
             style: AppStyle.styleMedium16,
           ),
           const SizedBox(
