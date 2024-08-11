@@ -9,8 +9,8 @@ class CustomTextFiled extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextField(
       decoration: InputDecoration(
-        hintStyle:
-            AppStyle.styleRegular16.copyWith(color: const Color(0xffAAAAAA)),
+        hintStyle: AppStyle.styleRegular16(context)
+            .copyWith(color: const Color(0xffAAAAAA)),
         hintText: hint,
         fillColor: const Color(0xffFAFAFA),
         filled: true,

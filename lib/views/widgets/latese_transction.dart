@@ -7,17 +7,17 @@ class LateseTransction extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
           'Latese Transction',
-          style: AppStyle.styleMedium16,
+          style: AppStyle.styleMedium16(context),
         ),
-        SizedBox(
+        const SizedBox(
           height: 12,
         ),
-        LateseTransctionListView(),
+        const LateseTransctionListView(),
       ],
     );
   }

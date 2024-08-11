@@ -17,7 +17,7 @@ class TransactionHistory extends StatelessWidget {
         ),
         Text(
           '13 April 2024',
-          style: AppStyle.styleRegular16.copyWith(
+          style: AppStyle.styleMedium16(context).copyWith(
             color: const Color(0xffAAAAAA),
           ),
         ),
